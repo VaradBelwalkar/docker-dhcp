@@ -33,6 +33,9 @@ jobs:
 
       - name: Build
         run: make PLUGIN_TAG=${{ steps.vars.outputs.tag }} multiarch
+        
+      - name: Install OpenSSL dependencies
+        run: sudo apt install openssl-dev
 
       - name: Push
         env:
