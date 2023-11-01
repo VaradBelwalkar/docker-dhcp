@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     env:
       PLUGIN_NAME: ghcr.io/VaradBelwalkar/docker-net-dhcp
@@ -33,7 +33,7 @@ jobs:
 
       - name: Build
         run: make PLUGIN_TAG=${{ steps.vars.outputs.tag }} multiarch
-        
+
       - name: Install OpenSSL dependencies
         run: sudo apt install openssl-dev
 
