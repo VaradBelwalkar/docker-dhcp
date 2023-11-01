@@ -1,0 +1,7 @@
+/bin/*
+!/bin/.gitkeep
+/plugin/
+/multiarch/
+
+.vscode/
+__pycache__/
