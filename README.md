@@ -1,5 +1,4 @@
 # docker-net-dhcp
-Maintainer: VaradBelwalkar
 
 `docker-net-dhcp` is a Docker plugin providing a network driver which allocates IP addresses (IPv4 and optionally IPv6)
 via an existing DHCP server (e.g. your router).
